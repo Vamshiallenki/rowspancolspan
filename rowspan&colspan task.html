@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://127.0.0.1:5500/rowspancolspan.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</head>
+<body>
+    <table border="1" cellspascing="0" cellpadding="10">
+        <tbody><tr align="centre">
+            <td colspan="3">University </td>
+
+        </tr>
+        <tr>
+            <td rowspan="3">DU</td>
+            <td>BUET</td>
+            <td>JNU</td>
+        </tr>
+        <tr>
+            <td>JNU</td>
+            <td rowspan="2">RUET</td>
+        </tr>
+        <tr>
+            <td>CUET</td>
+        </tr>
+    </tbody></table>
+    <table border="1" cellspascing="0" cellpadding="10">
+        <tbody><tr>
+            <td colspan="3">1</td>
+            <td rowspan="3">2</td>
+            <td colspan="2">3</td>
+            <td rowspan="2">N</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+    
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td colspan="3">9</td>
+            <td colspan="2">10</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td colspan="7">N</td>
+        </tr>
+        <tr>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            <td>N</td>
+            
+        </tr>
+    </tbody></table>
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tbody><tr>
+            <td>Name</td>
+            <td>Subject</td>
+            <td>Parts</td>
+        </tr>
+        <tr>
+            <td rowspan="5">SHIVA</td>
+            <td rowspan="2">MATHHS</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Science</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td rowspan="4">RAM</td>
+            <td rowspan="2">Maths</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Science</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>B</td>
+        </tr>
+    </tbody></table>
+     <table border="1" cellspacing="0" cellpadding="10">
+        <tbody><tr align="center">
+            <td colspan="6">Time Table</td>
+
+        </tr>
+        <tr>
+           
+            <td rowspan="6">Hours</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+        </tr>
+        <tr>
+        
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Social</td>
+            <td>Sports</td>
+        </tr>
+        <tr align="center">
+            <td colspan="5">Lunch</td>
+        </tr>
+        <tr>
+           
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+           
+            <td>Social</td>
+            <td>History</td>
+            <td>English</td>
+            <td>Maths</td>           
+        </tr>
+     </tbody></table>
+</body></html>
